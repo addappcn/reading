@@ -55,7 +55,8 @@ public class MainActivity extends ReactActivity {
         return Arrays.<ReactPackage>asList(
                 new MainReactPackage(),
                 new WeChatPackage(),
-                this.codePush.getReactPackage(),
+                this.codePush,
                 new RNDeviceInfo());
+                //this.codePush.getReactPackage() 没有getReactPackage()这个方法
     }
 }
